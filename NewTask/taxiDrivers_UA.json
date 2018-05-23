@@ -1,0 +1,28 @@
+{
+  "drivers": [
+    {
+      "id": 4,
+      "name": "Anastasia",
+      "license": "11223244",
+      "rate": 4.2
+    },
+    {
+      "id": 1,
+      "name": "Oleksander",
+      "license": "11243344",
+      "rate": 3.3
+    },
+    {
+      "id": 3,
+      "name": "Artem",
+      "license": "33253545",
+      "rate": 4.85
+    },
+    {
+      "id": 5,
+      "name": "Cobain",
+      "license": "333243445",
+      "rate": 2.99
+    }
+  ]
+}
