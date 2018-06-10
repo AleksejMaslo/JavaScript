@@ -1,0 +1,28 @@
+{
+  "drivers": [
+    {
+      "id": 3,
+      "name": "Margaret",
+      "license": "13223344",
+      "rate": 4.4
+    },
+    {
+      "id": 1,
+      "name": "Jhon",
+      "license": "11223344",
+      "rate": 3.4
+    },
+    {
+      "id": 7,
+      "name": "Bob",
+      "license": "33223345",
+      "rate": 4.99
+    },
+    {
+      "id": 6,
+      "name": "Tupack",
+      "license": "333243345",
+      "rate": 1.99
+    }
+  ]
+}

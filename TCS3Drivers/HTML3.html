@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+    <link rel="stylesheet" type="text/css" href="Table.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="dropdown">
+    <div class="topnav">
+        <a class = "active dropdown-country" href="#country">Country</a>
+        <a href="#add" onclick="addDrivers()">Add</a>
+        <a href="#edit" onclick="">Edit</a>
+        <a href="#delete" onclick="">Delete</a>
+        <a href="#return" onclick="">Return</a>
+    </div>
+    <div id="dropdown-content" class="dropdown-content">
+        <a href = "#" onclick="loadUADrivers()">Ukraine Drivers</a>
+        <a href = "#" onclick="loadENDrivers()">England Drivers</a>
+    </div>
+</div>
+<div>
+    <form>
+        <input type="text" id="id" name="id" placeholder="Id.."></input>
+        <input type="text" id="name" name="name" placeholder="Name.."></input>
+        <input type="text" id="license" name="license" maxlength="8" placeholder="License.."></input>
+        <input type="text" id="rate" name="rate" placeholder="Rate.."></input>
+        <select id="country" name="country">
+            <option value="ukraine">Ukraine</option>
+            <option value="england">England</option>
+        </select>
+
+        <button type="button" value="Add" onclick="addDrivers()"></button>
+    </form>
+</div>
+<script src="JSBrowser.js"></script>
+<div id="drivers"/>
+</body>
+</html>
