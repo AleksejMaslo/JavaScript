@@ -10,9 +10,9 @@
 <body>
 <div class="dropdown">
     <div class="topnav">
-        <a class = "active dropdown-country" href="#country">Country</a>
+        <a class = "active" href="#country">Country</a>
         <a href="#add" onclick="addDrivers()">Add</a>
-        <a href="#edit" onclick="">Edit</a>
+        <a href="#edit" onclick="editDrivers()">Edit</a>
         <a href="#delete" onclick="">Delete</a>
         <a href="#return" onclick="">Return</a>
     </div>
@@ -32,7 +32,9 @@
             <option value="england">England</option>
         </select>
 
-        <button type="button" value="Add" onclick="addDrivers()"></button>
+        <button class="button" value="Add" onclick="addDrivers()">Add</button>
+        <button class="button" value="Edit" onclick="editDrivers()">Edit</button>
+
     </form>
 </div>
 <script src="JSBrowser.js"></script>

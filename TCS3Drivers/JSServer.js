@@ -9,12 +9,16 @@ http.createServer(function (req, res) {
     if (req.url === "/JSBrowser.js") {
         res.write(jsContent);
     } else if (req.url === "/Table.css") {
-      res.write(css);
+        res.setHeader('content-type', 'text/css');
+        res.write(css);
     } else if (req.url === "/taxiDrivers_EN.json") {
         res.write(contentsEN);
     } else if (req.url === "/taxiDrivers_UA.json") {
         res.write(contentsUA);
-    } else if (req.url === "/drivers" && req.method === "POST") {
+    } else if (req.url === "/drivers" && req.method === "GET") {
+        console.log("Accept editing driver request");
+    }
+    else if (req.url === "/drivers" && req.method === "POST") {
         console.log("Accept adding driver request");
         var body = '';
         req.on('data', function (chunk) {

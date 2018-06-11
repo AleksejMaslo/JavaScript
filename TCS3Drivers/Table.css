@@ -18,6 +18,17 @@ td, th {
 
 body {margin:0}
 
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
 .topnav {
     background-color: #333;
     overflow: hidden;
@@ -60,10 +71,6 @@ body {margin:0}
     z-index: 1;
 }
 
-.dropdown-country{
-
-}
-
-.dropdown-country:hover #dropdown-content{
+.dropdown:hover .dropdown-content{
     display: block;
 }
