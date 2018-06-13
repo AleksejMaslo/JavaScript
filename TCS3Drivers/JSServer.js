@@ -15,10 +15,9 @@ http.createServer(function (req, res) {
         res.write(contentsEN);
     } else if (req.url === "/taxiDrivers_UA.json") {
         res.write(contentsUA);
-    } else if (req.url === "/drivers" && req.method === "GET") {
+    } else if (req.url === "/drivers" && req.method === "PUT") {
         console.log("Accept editing driver request");
-    }
-    else if (req.url === "/drivers" && req.method === "POST") {
+    } else if (req.url === "/drivers" && req.method === "POST") {
         console.log("Accept adding driver request");
         var body = '';
         req.on('data', function (chunk) {
