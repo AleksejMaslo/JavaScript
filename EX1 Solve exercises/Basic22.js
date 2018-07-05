@@ -1,6 +1,6 @@
 function removeCharacter(str, position) {
-str = str.replace('x', 'c');
-return str;
+var new_str = str.replace('x', 'c');
+return new_str;
 }
 
 console.log(removeCharacter ("We need replaxe!",11));

@@ -1,8 +1,8 @@
-function string(x) {
-    if (x.substr(0, 2) === "Py") {
-        return x;
+function string(str) {
+    if (str.substr(0, 2) === "Py") {
+        return str;
     } else {
-        return "Py" + x;
+        return "Py" + str;
     }
 }
 
