@@ -4,6 +4,5 @@ function combination (str) {
     }
 }
 
-
 console.log(combination("madam"));
 console.log(combination("tree"));
