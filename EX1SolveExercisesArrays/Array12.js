@@ -1,8 +1,7 @@
+var arr1 = [2, 1, 1, 1, 1, 1, 1, 1, 1];
+
+    for (var i = 0; i < arr.length; i+=1) {
+        arr[i]
+    }
 
 
-
-
-
-
-var arr1 = [3, 1, 7, 6, 5, -4, -3, 2, 1];
-console.log((arr1));

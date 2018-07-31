@@ -1,5 +1,10 @@
 function upper_case (str) {
-    return str.charAt(0).toUpperCase() + str.substring(1,3) + " " + str.charAt(4).toUpperCase() + str.substring(5,9) + " " +  str.charAt(10).toUpperCase() + str.substring(11,15) + " " + str.charAt(16).toUpperCase() + str.substring(17,str.length);
+    var arr = str.split(' ');
+    var newArray = [];
+    for (var i = 0; i < arr.length; i++) {
+        newArray.push(arr[i].charAt(0).toUpperCase()+arr[i].slice(1));
+    }
+    return newArray.join(' ');
 }
 
 console.log(upper_case("the quick brown fox"));
