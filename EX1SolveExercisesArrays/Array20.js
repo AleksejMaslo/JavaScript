@@ -1,4 +1,4 @@
-var arr = [3, 1, 7, 6, 5, -4, -3, 2, 1];
+var arr = [3, 1, 3, 3, 5, -4, -3, 2, 1];
 
 function find_duplicate(arr) {
     var temp = {};
@@ -12,6 +12,7 @@ function find_duplicate(arr) {
         }
     }
     console.log(JSON.stringify(temp));
+
     var duplicate_element;
     for (var prop in temp) {
         if (!duplicate_element) {
