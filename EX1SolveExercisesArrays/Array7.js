@@ -1,15 +1,18 @@
-var array = [3, 1, 7, 6, 5, -4, -3, 2, 1];
+var arr = [3, 1, 7, 6, 5, -4, -3, 2, 1];
 
-function BubbleSort(array) {
-    var n = array.length;
-    for (var i = 0; i < n - 1; i++) {
-        for (var j = 0; j < n - 1 - i; j++) {
-            if (array[j + 1] < array[j]) {
-                var t = array[j + 1];
-                array[j + 1] = array[j];
-                array[j] = t;
+function bubbleSort(arr) {
+    do {
+        var swapped = false;
+        for (var i = 0; i < arr.length - 1; i++) {
+            if (arr[i] > arr[i + 1]) {
+                var temp = arr[i];
+                arr[i] = arr[i + 1];
+                arr[i + 1] = temp;
+                swapped = true;
             }
         }
-    }
-    return array;
+    } while (swapped);
 }
+
+bubbleSort(arr);
+console.log(arr);

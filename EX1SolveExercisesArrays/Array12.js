@@ -1,7 +1,8 @@
-var arr1 = [2, 1, 1, 1, 1, 1, 1, 1, 1];
+var array = [2, 1, 1, 1, 1, 1, 1, 1, 1];
 
-    for (var i = 0; i < arr.length; i+=1) {
-        arr[i]
-    }
+var newArray = [];
+for (var i = 0; i < array.length; i++) {
+    newArray.push(array[i]);
+}
 
-
+console.log(newArray);
