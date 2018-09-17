@@ -1,0 +1,54 @@
+.logo {
+    width: 25%;
+    position: fixed;
+    top: 10%;
+    left: 35%;
+}
+
+h1 {
+    color: #DC143C;
+    position: fixed;
+    top: 25%;
+    left: 35%;
+    
+}
+
+.button {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    padding: 35px 70px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+input[target=EnglishButton] {
+    position: fixed;
+    top: 50%;
+    left: 60%;
+    margin-top: -50px;
+    margin-left: -100px;
+}
+
+input[target=RussianButton] {
+    position: fixed;
+    top: 50%;
+    left: 40%;
+    margin-top: -50px;
+    margin-left: -100px;
+}
+
+.button:hover {
+    background-color: #DC143C;
+    color: white;
+}
+.button:active {
+    background-color: #DC143C;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
